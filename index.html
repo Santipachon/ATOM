@@ -353,33 +353,6 @@ a{color:inherit}
 </head>
 <body>
 
-<!-- ══ definición del logo ATOM (dron + órbita atómica) ══ -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <g id="atmBlades" stroke="none">
-      <ellipse cx="22" cy="32" rx="14" ry="2.9" transform="rotate(-14 22 32)"/>
-      <ellipse cx="32" cy="22" rx="2.9" ry="14" transform="rotate(14 32 22)"/>
-    </g>
-    <mask id="atmMask">
-      <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#fff"/>
-      <g fill="#000" stroke="#000">
-        <ellipse cx="60" cy="60" rx="41" ry="16.5" fill="none" stroke-width="5"/>
-        <ellipse cx="60" cy="60" rx="16.5" ry="41" fill="none" stroke-width="5"/>
-        <path d="M38 38 L82 82 M82 38 L38 82" stroke-width="8" stroke-linecap="round"/>
-        <circle cx="38" cy="38" r="8"/>
-        <circle cx="82" cy="38" r="8"/>
-        <circle cx="38" cy="82" r="8"/>
-        <circle cx="82" cy="82" r="8"/>
-        <rect x="45" y="45" width="30" height="30" rx="7"/>
-        <use href="#atmBlades"/>
-        <use href="#atmBlades" transform="translate(120,0) scale(-1,1)"/>
-        <use href="#atmBlades" transform="translate(0,120) scale(1,-1)"/>
-        <use href="#atmBlades" transform="translate(120,120) scale(-1,-1)"/>
-      </g>
-    </mask>
-  </defs>
-</svg>
-
 <!-- ══ ticker ══ -->
 <div class="ticker">
   <div class="ticker-inner wrap">
@@ -393,8 +366,20 @@ a{color:inherit}
 <header class="hdr">
   <div class="wrap hdr-in">
     <a href="#top" class="brand" aria-label="ATOM Dron Colombia, inicio">
-      <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true">
-        <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#FF4E12" mask="url(#atmMask)"/>
+      <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+        <mask id="atmA" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+          <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#fff"/>
+          <g fill="#000" stroke="#000">
+            <ellipse cx="60" cy="60" rx="40" ry="16" fill="none" stroke-width="5.5"/>
+            <ellipse cx="60" cy="60" rx="16" ry="40" fill="none" stroke-width="5.5"/>
+            <path d="M38 38 L82 82 M82 38 L38 82" stroke-width="8.5" stroke-linecap="round"/>
+            <circle cx="38" cy="38" r="8"/><circle cx="82" cy="38" r="8"/>
+            <circle cx="38" cy="82" r="8"/><circle cx="82" cy="82" r="8"/>
+            <rect x="46" y="46" width="28" height="28" rx="7"/>
+            <g transform="translate(38,38) rotate(225)"><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(-24)"/><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(24)"/></g><g transform="translate(82,38) rotate(315)"><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(-24)"/><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(24)"/></g><g transform="translate(38,82) rotate(135)"><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(-24)"/><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(24)"/></g><g transform="translate(82,82) rotate(45)"><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(-24)"/><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(24)"/></g>
+          </g>
+        </mask>
+        <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#FF4E12" mask="url(#atmA)"/>
       </svg>
       <span class="brand-txt">
         <span class="brand-name">ATOM</span>
@@ -740,8 +725,20 @@ a{color:inherit}
   <div class="wrap">
     <div class="ftr-in">
       <a href="#top" class="brand">
-        <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true">
-          <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#FF4E12" mask="url(#atmMask)"/>
+        <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+          <mask id="atmB" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+            <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#fff"/>
+            <g fill="#000" stroke="#000">
+              <ellipse cx="60" cy="60" rx="40" ry="16" fill="none" stroke-width="5.5"/>
+              <ellipse cx="60" cy="60" rx="16" ry="40" fill="none" stroke-width="5.5"/>
+              <path d="M38 38 L82 82 M82 38 L38 82" stroke-width="8.5" stroke-linecap="round"/>
+              <circle cx="38" cy="38" r="8"/><circle cx="82" cy="38" r="8"/>
+              <circle cx="38" cy="82" r="8"/><circle cx="82" cy="82" r="8"/>
+              <rect x="46" y="46" width="28" height="28" rx="7"/>
+              <g transform="translate(38,38) rotate(225)"><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(-24)"/><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(24)"/></g><g transform="translate(82,38) rotate(315)"><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(-24)"/><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(24)"/></g><g transform="translate(38,82) rotate(135)"><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(-24)"/><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(24)"/></g><g transform="translate(82,82) rotate(45)"><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(-24)"/><ellipse cx="13" cy="0" rx="13" ry="2.7" transform="rotate(24)"/></g>
+            </g>
+          </mask>
+          <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#FF4E12" mask="url(#atmB)"/>
         </svg>
         <span class="brand-txt">
           <span class="brand-name">ATOM</span>
