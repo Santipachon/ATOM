@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ATOM DRON COLOMBIA — Reparación y mantenimiento de drones DJI en Bogotá</title>
 <meta name="description" content="Taller especializado en reparación de drones DJI en Bogotá. Diagnóstico claro, repuestos originales y entregas en 24 horas. 4.9★ con 276 opiniones en Google. Se atiende con cita previa.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3E%3Cpolygon%20points='60,6%20106,33%20106,87%2060,114%2014,87%2014,33'%20fill='%23FF4E12'/%3E%3Cg%20stroke='%2316100E'%20stroke-width='9'%20stroke-linecap='round'%3E%3Cpath%20d='M38%2038L82%2082M82%2038L38%2082'/%3E%3C/g%3E%3Cg%20fill='%2316100E'%3E%3Ccircle%20cx='38'%20cy='38'%20r='9'/%3E%3Ccircle%20cx='82'%20cy='38'%20r='9'/%3E%3Ccircle%20cx='38'%20cy='82'%20r='9'/%3E%3Ccircle%20cx='82'%20cy='82'%20r='9'/%3E%3Crect%20x='45'%20y='45'%20width='30'%20height='30'%20rx='7'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3E%3Crect%20width='120'%20height='120'%20fill='%2316100E'/%3E%3Cpolygon%20points='60,14%20100,37%20100,83%2060,106%2020,83%2020,37'%20fill='%23FF4E12'/%3E%3Cg%20stroke='%2316100E'%20stroke-width='8'%20stroke-linecap='round'%3E%3Cpath%20d='M42%2042L78%2078M78%2042L42%2078'/%3E%3C/g%3E%3Cg%20fill='%2316100E'%3E%3Ccircle%20cx='42'%20cy='42'%20r='8'/%3E%3Ccircle%20cx='78'%20cy='42'%20r='8'/%3E%3Ccircle%20cx='42'%20cy='78'%20r='8'/%3E%3Ccircle%20cx='78'%20cy='78'%20r='8'/%3E%3Crect%20x='48'%20y='48'%20width='24'%20height='24'%20rx='6'/%3E%3C/g%3E%3C/svg%3E">
+<meta name="theme-color" content="#16100E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -104,7 +107,7 @@ a{color:inherit}
 }
 .hdr-in{display:flex;align-items:center;gap:22px;height:70px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
-.brand-mark{width:38px;height:38px;flex-shrink:0}
+.brand-mark{width:42px;height:42px;flex-shrink:0;margin-left:-2px}
 .brand-txt{display:flex;flex-direction:column;line-height:1}
 .brand-name{
   font-family:var(--display);
@@ -350,6 +353,33 @@ a{color:inherit}
 </head>
 <body>
 
+<!-- ══ definición del logo ATOM (dron + órbita atómica) ══ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="atmBlades" stroke="none">
+      <ellipse cx="22" cy="32" rx="14" ry="2.9" transform="rotate(-14 22 32)"/>
+      <ellipse cx="32" cy="22" rx="2.9" ry="14" transform="rotate(14 32 22)"/>
+    </g>
+    <mask id="atmMask">
+      <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#fff"/>
+      <g fill="#000" stroke="#000">
+        <ellipse cx="60" cy="60" rx="41" ry="16.5" fill="none" stroke-width="5"/>
+        <ellipse cx="60" cy="60" rx="16.5" ry="41" fill="none" stroke-width="5"/>
+        <path d="M38 38 L82 82 M82 38 L38 82" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="38" cy="38" r="8"/>
+        <circle cx="82" cy="38" r="8"/>
+        <circle cx="38" cy="82" r="8"/>
+        <circle cx="82" cy="82" r="8"/>
+        <rect x="45" y="45" width="30" height="30" rx="7"/>
+        <use href="#atmBlades"/>
+        <use href="#atmBlades" transform="translate(120,0) scale(-1,1)"/>
+        <use href="#atmBlades" transform="translate(0,120) scale(1,-1)"/>
+        <use href="#atmBlades" transform="translate(120,120) scale(-1,-1)"/>
+      </g>
+    </mask>
+  </defs>
+</svg>
+
 <!-- ══ ticker ══ -->
 <div class="ticker">
   <div class="ticker-inner wrap">
@@ -363,10 +393,8 @@ a{color:inherit}
 <header class="hdr">
   <div class="wrap hdr-in">
     <a href="#top" class="brand" aria-label="ATOM Dron Colombia, inicio">
-      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-        <rect x="0" y="0" width="64" height="64" rx="14" fill="#FF4E12"/>
-        <path d="M18 60 L16 42 C15 34 17 28 24 24 L25 9 L35 22 C44 24 52 29 57 36 L58 41 L48 43 L44 42 C42 48 38 52 37 60 Z" fill="#16100E"/>
-        <circle cx="30.5" cy="30" r="2" fill="#FF4E12"/>
+      <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true">
+        <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#FF4E12" mask="url(#atmMask)"/>
       </svg>
       <span class="brand-txt">
         <span class="brand-name">ATOM</span>
@@ -712,10 +740,8 @@ a{color:inherit}
   <div class="wrap">
     <div class="ftr-in">
       <a href="#top" class="brand">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect x="0" y="0" width="64" height="64" rx="14" fill="#FF4E12"/>
-          <path d="M18 60 L16 42 C15 34 17 28 24 24 L25 9 L35 22 C44 24 52 29 57 36 L58 41 L48 43 L44 42 C42 48 38 52 37 60 Z" fill="#16100E"/>
-          <circle cx="30.5" cy="30" r="2" fill="#FF4E12"/>
+        <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true">
+          <polygon points="60,6 106,33 106,87 60,114 14,87 14,33" fill="#FF4E12" mask="url(#atmMask)"/>
         </svg>
         <span class="brand-txt">
           <span class="brand-name">ATOM</span>
